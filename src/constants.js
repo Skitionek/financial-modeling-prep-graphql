@@ -4,4 +4,4 @@
 	- Created:  2019-05-01
 */
 
-export const alphaVantageInterface = 'alphaVantage';
+export const financialModelingPrepInterface = 'financialModelingPrep';

@@ -1,6 +1,6 @@
 {
-	"name": "alpha-vantage-graphql",
-	"version": "1.0.0",
+	"name": "financial-modeling-prep-graphql",
+	"version": "0.0.0",
 	"description": "",
 	"main": "src/index.js",
 	"directories": {
@@ -10,7 +10,7 @@
 		"alpha vantage",
 		"vantage",
 		"alpha",
-		"alphavantage",
+		"financialModelingPrep",
 		"stocks",
 		"stock market",
 		"api"
@@ -29,9 +29,9 @@
 		"Zack Urben <zackurben@gmail.com> (http://zackurben.com)"
 	],
 	"license": "MIT",
-	"homepage": "https://github.com/biosustain-gem/alpha-vantage-graphql",
+	"homepage": "https://github.com/biosustain-gem/financial-modeling-prep-graphql",
 	"bugs": {
-		"web": "https://github.com/biosustain-gem/alpha-vantage-graphql/issues"
+		"web": "https://github.com/biosustain-gem/financial-modeling-prep-graphql/issues"
 	},
 	"engines": {
 		"node": ">=6.0.0"

@@ -1,4 +1,7 @@
 type Query {
+
+
+
     cryptocurrencyExchangeRates: [CryptocurrencyExchangeRate]
     cryptocurrency(symbol: String!, market: String): Cryptocurrency, #Do not overwrite alphavantege
     cryptocurrencies: [Cryptocurrency]!,

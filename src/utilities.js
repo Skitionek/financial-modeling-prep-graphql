@@ -3,7 +3,7 @@
 	- Email:    Skitionek@gmail.com
 	- Created:  2019-05-01
 */
-import AlphaVantageAPI from "./dataSource";
+import financialModelingPrepAPI from "./dataSource";
 
 export const production_flag = process.env.NODE_ENV === 'production';
 

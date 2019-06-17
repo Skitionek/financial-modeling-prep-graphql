@@ -9,8 +9,8 @@ import 'reflect-metadata';
 
 import { createTestClient } from 'apollo-server-testing';
 import { ApolloServer } from 'apollo-server';
-import alphaVantageModule, { alphaVantageProviderFactory, quoteFields, timeSeriesFields } from '../src';
-// import alphaVantage from "../src/dataSource";
+import financialModelingPrepModule, { financialModelingPrepProviderFactory, quoteFields, timeSeriesFields } from '../src';
+// import financialModelingPrep from "../src/dataSource";
 import gqlGenerator from 'gql-generator-node';
 import {
 	CryptocurrencyExchangeRateParamsSet,
@@ -24,18 +24,18 @@ import './jest.extensions';
 
 jest.setTimeout(30000);
 
-describe('alphaVantage.module', () => {
+describe('financialModelingPrep.module', () => {
 	// get module and inject mockup
-	const { schema, injector } = alphaVantageModule;
+	const { schema, injector } = financialModelingPrepModule;
 	injector
-		.provide(alphaVantageProviderFactory('demo', {
+		.provide(financialModelingPrepProviderFactory('demo', {
 			overwrite: true
 		}));
 
 	// create a test server to test against, using our production typeDefs,
 	// resolvers, and dataSources.
 	const server = new ApolloServer({
-		schema: alphaVantageModule.schema,
+		schema: financialModelingPrepModule.schema,
 		context: session => session,
 		formatResponse: r => {
 			return r; // hook for debugging

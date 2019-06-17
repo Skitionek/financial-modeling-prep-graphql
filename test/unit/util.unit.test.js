@@ -646,7 +646,7 @@ test(`non 200 request responses are thrown to a catch`, () => {
   return alpha.util
     .fn('123')()
     .catch(error => {
-      expect(error).toEqual('An AlphaVantage error occurred. 123: {}');
+      expect(error).toEqual('An financialModelingPrep error occurred. 123: {}');
     });
 });
 
@@ -656,6 +656,6 @@ test(`200 request responses without meta data are thrown to a catch`, () => {
   return alpha.util
     .fn('200')()
     .catch(error => {
-      expect(error).toEqual('An AlphaVantage error occurred. {}');
+      expect(error).toEqual('An financialModelingPrep error occurred. {}');
     });
 });

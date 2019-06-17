@@ -1,8 +1,8 @@
-import FinancialModelingPrep from "./wrapped/index";
+import FinancialModelingPrep from "./src/dataSource";
 import { GraphQLModule } from '@graphql-modules/core';
 import 'graphql-import-node';
 import * as typeDefs from './schema.graphql';
-import { alphaVantageInterface, financialmodelingprepInterface } from "../../constants";
+import { financialModelingPrepInterface, financialmodelingprepInterface } from "../../constants";
 import { forward, fragmentResolver } from "../../utilities";
 
 const { util, crypto: { cryptocurrency, cryptocurrencies }, financial, forex, stock, company, technical, performance } = FinancialModelingPrep();

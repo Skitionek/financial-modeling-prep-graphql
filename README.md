@@ -1,11 +1,6 @@
-# AlphaVantage
+# financialModelingPrep
 
-## Outdated readme
-[![Build Status](https://travis-ci.org/zackurben/alphavantage.svg?branch=master)](https://travis-ci.org/zackurben/alphavantage)
-[![Coverage Status](https://coveralls.io/repos/github/zackurben/alphavantage/badge.svg?branch=master)](https://coveralls.io/github/zackurben/alphavantage?branch=master)
-[![Greenkeeper badge](https://badges.greenkeeper.io/zackurben/alphavantage.svg)](https://greenkeeper.io/)
-
-This is a simple wrapper around the [Alpha Vantage API](https://www.alphavantage.co/documentation/) hosted on [NPM](https://www.npmjs.com/package/alphavantage). I have no affiliation with AlphaVantage.
+This is a simple wrapper around the [financialModelingPrep](https://www.financialModelingPrep.co/documentation/) hosted on [NPM](https://www.npmjs.com/package/financialModelingPrep). I have no affiliation with financialModelingPrep.
 
 All contributions are welcome! This is an open source project under the MIT license, see [LICENSE.md](LICENSE.md) for additional information.
 
@@ -13,7 +8,7 @@ All contributions are welcome! This is an open source project under the MIT lice
 
 ## Installation
 ```bash
-npm i alphavantage
+npm i financialModelingPrep
 ```
 
 ## Usage
@@ -25,7 +20,7 @@ npm i alphavantage
  * @param {String} key
  *   Your Alpha Vantage API key.
  */
-const alpha = require('alphavantage')({ key: 'qweqweqwe' });
+const alpha = require('financialModelingPrep')({ key: 'qweqweqwe' });
 
 // Simple examples
 alpha.data.intraday(`msft`).then(data => {
@@ -64,7 +59,7 @@ const polished = alpha.util.polish(data);
 
 ## Data
 
-See [Alpha Vantage](https://www.alphavantage.co/documentation/#time-series-data) for the parameters.
+See [Alpha Vantage](https://www.financialModelingPrep.co/documentation/#time-series-data) for the parameters.
 ```javascript
 alpha.data.intraday(symbol, outputsize, datatype, interval)
 alpha.data.daily(symbol, outputsize, datatype, interval)
@@ -80,14 +75,14 @@ alpha.data.batch([symbol1, symbol2..])
 
 ## Forex
 
-See [Alpha Vantage](https://www.alphavantage.co/documentation/#fx) for the parameters.
+See [Alpha Vantage](https://www.financialModelingPrep.co/documentation/#fx) for the parameters.
 ```javascript
 alpha.forex.rate(from_currency, to_currency)
 ```
 
 ## Crypto
 
-See [Alpha Vantage](https://www.alphavantage.co/documentation/#digital-currency) for the parameters.
+See [Alpha Vantage](https://www.financialModelingPrep.co/documentation/#digital-currency) for the parameters.
 ```javascript
 alpha.crypto.daily(symbol, market)
 alpha.crypto.weekly(symbol, market)
@@ -96,7 +91,7 @@ alpha.crypto.monthly(symbol, market)
 
 ## Technicals
 
-See [Alpha Vantage](https://www.alphavantage.co/documentation/#technical-indicators) for the parameters.
+See [Alpha Vantage](https://www.financialModelingPrep.co/documentation/#technical-indicators) for the parameters.
 ```javascript
 alpha.technical.sma(symbol, interval, time_period, series_type)
 alpha.technical.ema(symbol, interval, time_period, series_type)
@@ -154,17 +149,11 @@ alpha.technical.ht_dcphasor(symbol, interval, series_type)
 
 ## Performance
 
-See [Alpha Vantage](https://www.alphavantage.co/documentation/#sector-information) for the parameters.
+See [Alpha Vantage](https://www.financialModelingPrep.co/documentation/#sector-information) for the parameters.
 ```javascript
 alpha.performance.sector()
 ```
 
 ## Contributing
 
-All contributions are welcome! The purpose of this library is to keep function parity with the Alpha Vantage API, while keeping a slim and intuitive programming interface. Before any pull requests are made, please run `npm run lint` to fix style issues and ensure that all test are passing `npm test`. The codebase should always remain at 100% test coverage.
-
-Core has been forked from:
-  - Author: Zack Urben
-  - Twitter: https://twitter.com/zackurben (better)
-  - Contact: zackurben@gmail.com
-yet greatest part in common is it's structure. Current version support full API coverage, requests cache and  non duck-type keys normalisation.
+All contributions are welcome! The purpose of this library is to keep function parity with the financialModelingPrep API, while keeping a slim and intuitive programming interface. Before any pull requests are made, please run `npm run lint` to fix style issues and ensure that all test are passing `npm test`. 
