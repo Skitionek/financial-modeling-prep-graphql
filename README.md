@@ -1,5 +1,7 @@
 # financialModelingPrep
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/Skitionek/financial-modeling-prep-graphql.svg)](https://greenkeeper.io/)
+
 This is a simple wrapper around the [financialModelingPrep](https://www.financialModelingPrep.co/documentation/) hosted on [NPM](https://www.npmjs.com/package/financialModelingPrep). I have no affiliation with financialModelingPrep.
 
 All contributions are welcome! This is an open source project under the MIT license, see [LICENSE.md](LICENSE.md) for additional information.
