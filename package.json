@@ -54,7 +54,7 @@
 		"@babel/preset-env": "^7.4.4",
 		"@graphql-modules/core": "^0.7.1",
 		"@graphql-modules/di": "^0.7.1",
-		"apollo-server": "^2.4.8",
+		"apollo-server": "^2.9.14",
 		"apollo-server-testing": "^2.9.14",
 		"gql-generator-node": "^2.1.4",
 		"graphql-import-node": "0.0.4",
