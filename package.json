@@ -56,7 +56,7 @@
 		"@graphql-modules/di": "^0.7.1",
 		"apollo-server": "^2.4.8",
 		"apollo-server-testing": "^2.4.8",
-		"gql-generator-node": "^2.1.4",
+		"gql-generator-node": "^2.1.11",
 		"graphql-import-node": "0.0.4",
 		"jest": "^24.7.1",
 		"jest-summary-reporter": "0.0.2",
